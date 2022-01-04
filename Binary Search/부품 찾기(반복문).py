@@ -11,14 +11,21 @@ def binary_search(array, target, start, end):
         else:
             start = mid + 1
     return None
-#원소 개수와 찾고자 하는 문자열 입력받기
-n, target = list(map(int, input().split()))
-#전체 원소 입력받기
-array = list(map(int, input().split()))
 
-#수행 결과 출력
-result = binary_search(array, target, 0, n - 1)
-if result == None:
-    print("원소가 존재하지 않습니다.")
-else:
-    print(result + 1)
+#가게 부품개수 입력
+n = int(input())
+#가게에 있는 전체 부품 번호 입력
+array = list(map(int, input().split()))
+array.sort()
+#손님이 요청한 부품 개수 입력
+m = int(input())
+#손님이 요청한 전체 부품 번호 입력
+c = list(map(int, input().split()))
+
+#손님이 요청한 부품 번호 하나씩 확인
+for i in c:
+    result = binary_search(array, i, 0, n-1)
+    if result != None:
+        print('yes', end=' ')
+    else:
+        print('no', end=' ')
