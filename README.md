@@ -21,7 +21,7 @@
 | Sort |  [Link](./Sort/README.md) | 8 |
 | Binary Search |  [Link](./Binary%20Search/README.md) | 7 |
 | Dynamic Programming |  [Link](./Dynamic%20Programming/README.md) | 8 |
-| Shortest Path |  [Link](./Shortest%20Path/README.md) | 4 |
+| Shortest Path |  [Link](./Shortest%20Path/README.md) | 5 |
 | Graph |  [Link](./Graph/README.md) | 0 |
 
 <br>
