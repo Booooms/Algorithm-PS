@@ -1,33 +1,42 @@
-def bfs(wires, visited, start, n):
-    queue = [start]
-    cnt = 1
-    
+from collections import deque
+def bfs(start,visitied,graph):
+    queue = deque([start])
+    result = 1
+    visitied[start] = True
     while queue:
-        node = queue.pop(0)
-        for i in range(len(wires)):
-            if wires[i][0] == node:
-                if not visited[wires[i][1]]:
-                    visited[wires[i][1]] = True
-                    queue.append(wires[i][1])
-                    cnt += 1
-            elif wires[i][1] == node:
-                if not visited[wires[i][0]]:
-                    visited[wires[i][0]] = True
-                    queue.append(wires[i][0])
-                    cnt += 1
-                    
-    diff = abs((n-cnt) - cnt)
-    return diff
-    
+        now = queue.popleft()
+        
+        for i in graph[now]:
+            if visitied[i] == False:
+                result += 1
+                queue.append(i)
+                visitied[i] = True
+                
+    return result
+        
+
 def solution(n, wires):
-    min_abs = float('inf')
+    answer = n
+    graph = [[] for _ in range(n+1)]
     
-    for i in range(len(wires)):
-        visited = [False]*101
-        visited[wires[i][0]] = True
-        visited[wires[i][1]] = True
+    for v1,v2 in wires:
+        graph[v1].append(v2)
+        graph[v2].append(v1)
+            
+    for start,not_visit in wires:
+        visitied = [False]*(n+1)
+        visitied[not_visit] = True
+        result = bfs(start,visitied,graph)
+        if abs(result - (n-result)) < answer:
+            answer = abs(result - (n-result))
+        
+    return answer
 
-        diff = bfs(wires, visited, wires[i][0], n)
-        min_abs = min(min_abs, diff)
-
-    return min_abs
+# other solution
+# def solution(n, wires):
+#     ans = n
+#     for sub in (wires[i+1:] + wires[:i] for i in range(len(wires))):
+#         s = set(sub[0])
+#         [s.update(v) for _ in sub for v in sub if set(v) & s]
+#         ans = min(ans, abs(2 * len(s) - n))
+#     return ans
