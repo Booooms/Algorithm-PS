@@ -21,3 +21,14 @@ def solution(k, dungeons):
     visited = [0] * N
     dfs(k, 0, dungeons)
     return answer
+
+# other solution
+# def solution(k, dungeons):
+#     answer = 0
+#     dungeons = sorted(dungeons, key = lambda x : ((x[1]+x[0])/x[0],x[1]))
+#     for x,y in dungeons:
+#         print("x :", x, "y : ", y)
+#         if k >= x:
+#             k -= y
+#             answer += 1
+#     return answer
