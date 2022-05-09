@@ -15,7 +15,7 @@
 
 | Contents                          | Link    | Solved |
 | :--------------------------: | :-----------:  | :---------:  |
-| Greedy |  [Link](./Greedy/README.md) | 7 |
+| Greedy |  [Link](./Greedy/README.md) | 8 |
 | Implementation |  [Link](./Implementation/README.md) | 4 |
 | DFS/BFS |  [Link](./DFS-BFS/README.md) | 4 |
 | Sort |  [Link](./Sort/README.md) | 8 |
