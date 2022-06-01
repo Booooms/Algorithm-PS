@@ -22,7 +22,7 @@
 | Binary Search |  [Link](./Binary%20Search/README.md) | 9 |
 | Dynamic Programming |  [Link](./Dynamic%20Programming/README.md) | 14 |
 | Shortest Path |  [Link](./Shortest%20Path/README.md) | 8 |
-| Graph |  [Link](./Graph/README.md) | 9 |
+| Graph |  [Link](./Graph/README.md) | 10 |
 
 <br>
 
