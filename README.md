@@ -17,7 +17,7 @@
 | :--------------------------: | :-----------:  | :---------:  |
 | Greedy |  [Link](./Greedy/README.md) | 9 |
 | Implementation |  [Link](./Implementation/README.md) | 8 |
-| DFS/BFS |  [Link](./DFS-BFS/README.md) | 7 |
+| DFS/BFS |  [Link](./DFS-BFS/README.md) | 8 |
 | Sort |  [Link](./Sort/README.md) | 12 |
 | Binary Search |  [Link](./Binary%20Search/README.md) | 10 |
 | Dynamic Programming |  [Link](./Dynamic%20Programming/README.md) | 14 |
