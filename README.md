@@ -40,7 +40,8 @@
 | Greedy | 0 |
 | Sort | 0 |
 
-
 <br>
+
+
 [DOING]: https://img.shields.io/badge/-DOING-31AE0F
 [DONE]: https://img.shields.io/badge/-DONE-0885CC
