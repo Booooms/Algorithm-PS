@@ -30,7 +30,7 @@
 ## BaekJoon
 | Contents                        | Solved |
 | :--------------------------: |  :---------:  |
-| Data Structure | 2 |
+| Data Structure | 3 |
 | Math | 0 |
 | Dynamic Programming | 0 |
 | Brute Force | 0 |
