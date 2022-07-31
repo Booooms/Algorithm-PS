@@ -31,7 +31,7 @@
 | Contents                        | Solved |
 | :--------------------------: |  :---------:  |
 | Data Structure | 21 |
-| Math | 9 |
+| Math | 10 |
 | Dynamic Programming | 0 |
 | Brute Force | 0 |
 | Graph | 0 |
