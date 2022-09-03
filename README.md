@@ -32,7 +32,7 @@
 | :--------------------------: |  :---------:  |
 | Data Structure | 21 |
 | Math | 19 |
-| Dynamic Programming | 25 |
+| Dynamic Programming | 26 |
 | Brute Force | 0 |
 | Graph | 0 |
 | DFS/BFS | 0 |
