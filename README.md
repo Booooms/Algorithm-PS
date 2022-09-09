@@ -33,7 +33,7 @@
 | Data Structure | 21 |
 | Math | 19 |
 | Dynamic Programming | 26 |
-| Brute Force | 5 |
+| Brute Force | 6 |
 | Graph | 0 |
 | DFS/BFS | 0 |
 | Tree | 0 |
