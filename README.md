@@ -34,7 +34,7 @@
 | Math | 19 |
 | Dynamic Programming | 26 |
 | Brute Force | 29 |
-| Graph | 3 |
+| Graph | 4 |
 | DFS/BFS | 0 |
 | Tree | 0 |
 | Greedy | 0 |
