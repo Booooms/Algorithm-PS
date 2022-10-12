@@ -21,10 +21,12 @@ def bfs():
                 queue.append([nx, ny])
 
 bfs()
+
 for i in matrix:
     for j in i:
         if j == 0:
             print(-1)
             exit(0)
     res = max(res, max(i))
+    
 print(res - 1)
