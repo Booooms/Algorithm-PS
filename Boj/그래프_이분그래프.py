@@ -6,8 +6,10 @@ k = int(input())
 def bfs(graph, start):
     queue = deque()
     queue.append(start)
+
     if visited[start] == 0:
         visited[start] = 1  
+
     while queue:
         v = queue.popleft()
 
@@ -35,13 +37,16 @@ for i in range(k):
     V, E = map(int, input().split())
     graph = [[] for _ in range(V + 1)]
     visited = [0] * (V + 1)
+
     for j in range(E):
         a, b = map(int, input().split())
         graph[a].append(b)
         graph[b].append(a)
+
     for k in range(1, V + 1):
         if not bfs(graph, k):
             flag = 1
             break
+        
     if flag == 0:
         print("YES")
