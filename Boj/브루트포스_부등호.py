@@ -20,6 +20,7 @@ def solve(idx,s):
         else:
             max_ans = s
         return
+        
     for i in range(10):
         if(visited[i]==0):
             if(idx==0 or check(s[-1],str(i), a[idx-1])):

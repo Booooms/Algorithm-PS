@@ -7,11 +7,13 @@ def dfs(index):
         for i in range(0,N):
             if i not in start:
                 link.append(i)
+
         for i in range(0, N // 2 - 1):
             for j in range(i+1, N // 2):
                 startSum += arr[start[i]][start[j]] + arr[start[j]][start[i]]
                 linkSum += arr[link[i]][link[j]] + arr[link[j]][link[i]]
         diff = abs(linkSum-startSum)
+        
         if minAns > diff:
             minAns = diff
         link.clear()
