@@ -2,6 +2,7 @@ n = int(input())
 arr = list(map(int ,input().split()))
 visited = [False]*n
 answer = 0
+
 def sol(li):
     global answer #전역변수 선언
     if len(li) == n:
@@ -27,7 +28,7 @@ print(answer)
 from itertools import permutations
  
 n = int(input())
-a = list(map(int, sys.stdin.readline().split()))
+a = list(map(int, input().split()))
  
 per = permutations(a)
 ans = 0

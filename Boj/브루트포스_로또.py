@@ -4,9 +4,11 @@ def dfs(start, depth):
             print(combi[i], end=' ')
         print()
         return
+
     for i in range(start, len(s)):
         combi[depth] = s[i]
         dfs(i + 1, depth + 1)
+        
 combi = [0 for i in range(13)]
 while True:
     s = list(map(int, input().split()))
