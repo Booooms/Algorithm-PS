@@ -9,6 +9,7 @@ def solve(depth, idx, N, M):
     if depth == M:
         print(' '.join(map(str, out)))
         return
+        
     overlap = 0
     for i in range(idx, N):
         if not visited[i] and overlap != L[i]:

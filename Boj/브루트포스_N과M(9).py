@@ -5,6 +5,7 @@ def dfs(depth):
             d[s] = 1
             print(s)
         return
+        
     for i in range(N):
         if check[i]:
             continue

@@ -8,6 +8,7 @@ def solve(depth, N, M):
     if depth == M:
         print(' '.join(map(str, out)))
         return
+        
     overlap = 0
     for i in range(N):
         if overlap != L[i]:
