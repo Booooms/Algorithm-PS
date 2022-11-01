@@ -1,5 +1,6 @@
 import sys
 from itertools import combinations
+
 def input():
     return sys.stdin.readline().rstrip()
 
