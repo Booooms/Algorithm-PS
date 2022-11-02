@@ -32,6 +32,7 @@ N = int(input())
 arr = []
 start = []
 link = []
+
 for i in range(N):
     arr.append(list(map(int, input().split())))
 
