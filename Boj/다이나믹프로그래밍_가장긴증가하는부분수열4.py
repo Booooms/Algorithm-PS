@@ -15,6 +15,7 @@ for i in range(n-1, -1, -1):
     if dp[i]==length:
         b.append(a[i])
         length-=1
+        
 b.reverse()
 for i in b:
     print(i, end=' ')
