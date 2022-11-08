@@ -9,7 +9,6 @@ for _ in range(M):
     relationship[a].append(b)
     relationship[b].append(a)
 
-
 def dfs(depth, x):
     global result
     if depth == 4:
@@ -21,7 +20,6 @@ def dfs(depth, x):
             visited[i] = True
             dfs(depth + 1, i)
             visited[i] = False
-
 
 for i in range(N):
     visited[i] = True
