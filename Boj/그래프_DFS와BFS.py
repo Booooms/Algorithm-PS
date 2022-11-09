@@ -1,7 +1,6 @@
 from collections import deque
 
 N, M, V = list(map(int, input().split()))
-
 matrix = [[0]*(N+1) for i in range(N+1)]
 
 visited_dfs = [0]*(N+1)
