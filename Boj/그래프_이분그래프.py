@@ -31,7 +31,6 @@ def bfs(graph, start):
                     return False
     return True
 
-
 for i in range(k):
     flag = 0
     V, E = map(int, input().split())
