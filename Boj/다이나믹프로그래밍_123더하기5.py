@@ -1,7 +1,6 @@
 import sys
 
 input = sys.stdin.readline
-
 dp = [[0 for _ in range(3)] for _ in range(100001)]
 
 dp[1] = [1, 0, 0]
