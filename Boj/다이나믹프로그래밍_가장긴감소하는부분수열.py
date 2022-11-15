@@ -1,6 +1,7 @@
 n = int(input())
 a = list(map(int, input().split()))
 dp = [1 for i in range(n)]
+
 for i in range(1, n):
     s = []
     for j in range(i):
@@ -10,4 +11,5 @@ for i in range(1, n):
         continue
     else:
         dp[i] += max(s)
+        
 print(max(dp))
