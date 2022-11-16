@@ -1,5 +1,4 @@
 n = int(input())
-
 case = list(map(int, input().split()))
 reverse_case = case[::-1]
 
