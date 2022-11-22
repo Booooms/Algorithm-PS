@@ -10,4 +10,5 @@ def dfs():
         s.append(i)
         dfs()
         s.pop()
+        
 dfs()
