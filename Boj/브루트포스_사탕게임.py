@@ -42,13 +42,11 @@ for i in range(n):
         # 열 바꾸기
         if j+1 < n:
             arr[i][j], arr[i][j+1] = arr[i][j+1], arr[i][j]
-            
             # check는 arrd에서 인점한 것과 바꿨을 때 가장 긴 연속한 부분을 찾아내는 함수이다
             temp=check(arr)
 
             if temp > answer:
                 answer = temp
-               
             # 바꿨던 것을 다시 원래대로 돌려놓기
             arr[i][j], arr[i][j+1] = arr[i][j+1], arr[i][j]
 
@@ -56,13 +54,11 @@ for i in range(n):
         if i+1 < n:
         	# 인점한 것과 바꾸기
             arr[i][j], arr[i+1][j] = arr[i+1][j], arr[i][j]
-            
             # check는 arrd에서 인점한 것과 바꿨을 때 가장 긴 연속한 부분을 찾아내는 함수이다
             temp=check(arr)
 
             if temp > answer:
                 answer = temp
-            
             # 바꿨던 것을 다시 원래대로 돌려놓기
             arr[i][j], arr[i+1][j] = arr[i+1][j], arr[i][j]
             
